@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class MyRepo @Inject constructor(private val myDao: MyDao, private val myWebApi: MyWebApi) {
 
-    /*suspend fun createUser(userTable: UserTable) {
+    suspend fun createUser(userTable: UserTable) {
         delay(3000)
         myDao.createUser(userTable)
     }
@@ -16,7 +16,7 @@ class MyRepo @Inject constructor(private val myDao: MyDao, private val myWebApi:
     suspend fun checkLogin(email: String, password: String): Boolean {
         delay(3000)
         return myDao.checkLogin(email, password).isNotEmpty()
-    }*/
+    }
 
     suspend fun createUser(userTable: UserTable) {
         //delay(3000) // testing
